@@ -95,4 +95,9 @@ public class BrandService {
             this.brandMapper.insertBrandAndCategory(cid, brand.getId());
         });
     }
+
+    public List<Brand> queryBrandsByCid(Long cid) {
+
+        return this.brandMapper.selectBrandByCid(cid);
+    }
 }
